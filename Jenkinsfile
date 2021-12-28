@@ -17,7 +17,7 @@ pipeline {
 
         stage('parallel 1') {
           steps {
-            sh '''if [ a=b ]
+            sh '''if  a=b 
 then 
 b is equal to a 
 else 
