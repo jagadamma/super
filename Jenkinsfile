@@ -19,7 +19,9 @@ pipeline {
           steps {
             sh '''if [ a=b ]
 then 
-b is equal to a '''
+b is equal to a 
+else 
+fi'''
           }
         }
 
