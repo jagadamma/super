@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('stage 02') {
+      steps {
+        sh 'echo " hello devops"'
+      }
+    }
+
   }
 }
