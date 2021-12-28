@@ -17,10 +17,7 @@ pipeline {
 
         stage('parallel 1') {
           steps {
-            sh '''if  a=b 
-then 
-b is equal to a 
-else 
+            sh '''cd /etc/os-release
 '''
           }
         }
