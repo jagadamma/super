@@ -21,7 +21,7 @@ pipeline {
 then 
 b is equal to a 
 else 
-fi'''
+'''
           }
         }
 
