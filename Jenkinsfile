@@ -8,8 +8,21 @@ pipeline {
     }
 
     stage('stage 02') {
-      steps {
-        sh 'echo " hello devops"'
+      parallel {
+        stage('stage 02') {
+          steps {
+            sh 'echo " hello devops"'
+          }
+        }
+
+        stage('parallel 1') {
+          steps {
+            sh '''if [ a=b ]
+then 
+b is equal to a '''
+          }
+        }
+
       }
     }
 
