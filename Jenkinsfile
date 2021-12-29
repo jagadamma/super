@@ -9,15 +9,15 @@ pipeline {
 
     stage('stage 02') {
       parallel {
-        stage('stage 02') {
+        stage('stage 002') {
           steps {
             sh 'echo " hello devops"'
           }
         }
 
-        stage('parallel 1') {
+        stage('parallel 01') {
           steps {
-            sh '''cd /etc/os-release
+            sh '''cat /etc/os-release
 '''
           }
         }
