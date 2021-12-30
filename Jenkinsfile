@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('stage 01') {
       steps {
-        sh 'echo "hi aws "'
+        sh 'echo "hi aws from ${JOB_NAME}"'
       }
     }
 
