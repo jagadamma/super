@@ -2,12 +2,12 @@ pipeline {
   agent any
   enviorment
   {
-    place = bangalore
+    JOB_NAME = bangalore
   }
   stages {
     stage('stage 01') {
       steps {
-        sh 'echo "hi aws from ${place}"'
+        sh 'echo "hi aws from ${JOB_NAME}"'
       }
     }
 
