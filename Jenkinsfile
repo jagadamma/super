@@ -11,15 +11,8 @@ pipeline {
       }
     }
 
-    stage('stage 02') {
-      parallel {
-        stage('stage 1') {
-          steps {
-            sh 'echo " hello devops ${JOB_NAME}"
-          }
-        }
-
-        stage(' parallel 001') {
+ 
+        stage(' stage 02) {
           steps {
             sh '''cat /etc/os-release
 '''
@@ -29,5 +22,5 @@ pipeline {
       }
     }
 
-  }
-}
+  
+
